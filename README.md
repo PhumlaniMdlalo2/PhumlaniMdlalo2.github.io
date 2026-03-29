@@ -17,7 +17,7 @@ Aspiring Software Developer and Penetration Tester with practical experience in 
 | 📞 Phone | 0671910738 |
 | 📧 Email | [241093813@mycput.ac.za](mailto:241093813@mycput.ac.za) |
 | 💼 LinkedIn | [linkedin.com/in/phumlani-mdlalo-b17148274](https://linkedin.com/in/phumlani-mdlalo-b17148274) |
-| 🐙 GitHub | [github.com/PhumlaniMdlalo](https://github.com/PhumlaniMdlalo2) |
+| 🐙 GitHub | [github.com/PhumlaniMdlalo](https://github.com/PhumlaniMdlalo) |
 | 📍 Location | Cape Town, WC |
 
 ---
@@ -67,12 +67,12 @@ Aspiring Software Developer and Penetration Tester with practical experience in 
 ## 🚀 Projects
 
 ### 📚 Library Management System
-Uses **inheritance** to manage a database of library users and resources, distinguishing between students, staff, and various media types like books or DVDs.
+Uses **inheritance** to manage a database of library users and resources, distinguishing between students, staff, and various media types like books or DVDs. *(Python)*
 
 ---
 
 ### 🏦 Banking Transaction System
-Illustrates **polymorphism** by defining different interest and withdrawal rules for Savings, Checking, and Loan accounts. Highlights how subclasses can override base methods to enforce specific financial logic.
+Illustrates **polymorphism** by defining different interest and withdrawal rules for Savings, Checking, and Loan accounts. Highlights how subclasses can override base methods to enforce specific financial logic. *(Python)*
 
 ---
 
@@ -93,4 +93,4 @@ A **Client-Server Student Enrolment System** using a Java Swing GUI to manage st
 
 ---
 
-*🌐 View the live portfolio at [PhumlaniMdlalo.github.io/cv](https://phumlanimdlalo2.github.io/)*
+*🌐 View the live portfolio at [PhumlaniMdlalo.github.io/cv](https://PhumlaniMdlalo.github.io/cv)*
