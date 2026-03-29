@@ -93,4 +93,4 @@ A **Client-Server Student Enrolment System** using a Java Swing GUI to manage st
 
 ---
 
-*🌐 View the live portfolio at [PhumlaniMdlalo2.github.io/cv](https://PhumlaniMdlalo2.github.io/cv)*
+*🌐 View the live portfolio at https://phumlanimdlalo2.github.io/*
