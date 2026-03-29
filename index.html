@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Phumlani Mdlalo — Developer & Penetration Tester</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #080c10;
+      --surface: #0e1318;
+      --surface2: #141b22;
+      --border: #1e2a35;
+      --accent: #00e5ff;
+      --accent2: #7b61ff;
+      --text: #c8d8e8;
+      --text-dim: #5a7080;
+      --text-bright: #eaf4ff;
+      --green: #00ffa3;
+      --orange: #ff9d3d;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Space Mono', monospace;
+      font-size: 14px;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* GRID BACKGROUND */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(0,229,255,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,229,255,0.03) 1px, transparent 1px);
+      background-size: 40px 40px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* GLOW ORB */
+    body::after {
+      content: '';
+      position: fixed;
+      top: -20vh;
+      right: -10vw;
+      width: 60vw;
+      height: 60vw;
+      background: radial-gradient(circle, rgba(0,229,255,0.06) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 24px;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* NAV */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(8,12,16,0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    nav .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 14px;
+      padding-bottom: 14px;
+    }
+    .nav-logo {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 16px;
+      color: var(--accent);
+      letter-spacing: 0.05em;
+      text-decoration: none;
+    }
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+    }
+    .nav-links a {
+      color: var(--text-dim);
+      text-decoration: none;
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--accent); }
+
+    /* HERO */
+    .hero {
+      padding: 100px 0 70px;
+      border-bottom: 1px solid var(--border);
+    }
+    .hero-tag {
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .hero-tag::before {
+      content: '';
+      display: inline-block;
+      width: 24px;
+      height: 1px;
+      background: var(--accent);
+    }
+    h1 {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(42px, 8vw, 80px);
+      font-weight: 800;
+      line-height: 1;
+      color: var(--text-bright);
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+    }
+    h1 span {
+      display: block;
+      color: var(--accent);
+    }
+    .hero-sub {
+      font-family: 'Syne', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--text-dim);
+      margin: 24px 0 16px;
+      letter-spacing: 0.03em;
+    }
+    .hero-desc {
+      max-width: 560px;
+      color: var(--text);
+      margin-bottom: 36px;
+      font-size: 13px;
+    }
+    .hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 36px;
+    }
+    .badge {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      padding: 6px 14px;
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      color: var(--text);
+      border-radius: 2px;
+    }
+    .badge.accent { border-color: var(--accent); color: var(--accent); }
+    .badge.purple { border-color: var(--accent2); color: var(--accent2); }
+    .badge.green { border-color: var(--green); color: var(--green); }
+
+    .hero-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 20px;
+      font-family: 'Space Mono', monospace;
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-decoration: none;
+      border-radius: 2px;
+      transition: all 0.2s;
+      cursor: pointer;
+    }
+    .btn-primary {
+      background: var(--accent);
+      color: #000;
+      border: 1px solid var(--accent);
+      font-weight: 700;
+    }
+    .btn-primary:hover { background: transparent; color: var(--accent); }
+    .btn-outline {
+      background: transparent;
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+    .btn-outline:hover { border-color: var(--accent); color: var(--accent); }
+
+    /* SECTIONS */
+    section {
+      padding: 72px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 48px;
+    }
+    .section-num {
+      font-size: 11px;
+      color: var(--accent);
+      letter-spacing: 0.15em;
+      min-width: 32px;
+    }
+    h2 {
+      font-family: 'Syne', sans-serif;
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--text-bright);
+      letter-spacing: -0.01em;
+      text-transform: uppercase;
+    }
+    .section-line {
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    /* CONTACT GRID */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+    }
+    .contact-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 20px;
+      border-radius: 2px;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .contact-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+    .contact-label {
+      font-size: 10px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-dim);
+      margin-bottom: 6px;
+    }
+    .contact-value {
+      font-size: 13px;
+      color: var(--text-bright);
+      word-break: break-all;
+    }
+    .contact-value a { color: var(--accent); text-decoration: none; }
+    .contact-value a:hover { text-decoration: underline; }
+
+    /* EXPERIENCE */
+    .experience-item {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0;
+      margin-bottom: 40px;
+    }
+    .exp-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+    .exp-title {
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      color: var(--text-bright);
+    }
+    .exp-org {
+      font-size: 12px;
+      color: var(--accent2);
+      margin-top: 2px;
+    }
+    .exp-date {
+      font-size: 11px;
+      color: var(--text-dim);
+      white-space: nowrap;
+      background: var(--surface2);
+      padding: 4px 10px;
+      border: 1px solid var(--border);
+      border-radius: 2px;
+      margin-top: 2px;
+    }
+    .exp-bullets {
+      list-style: none;
+      border-left: 2px solid var(--border);
+      padding-left: 20px;
+    }
+    .exp-bullets li {
+      font-size: 13px;
+      color: var(--text);
+      margin-bottom: 8px;
+      position: relative;
+    }
+    .exp-bullets li::before {
+      content: '▸';
+      position: absolute;
+      left: -20px;
+      color: var(--accent);
+      font-size: 10px;
+      top: 3px;
+    }
+
+    /* EDUCATION */
+    .edu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .edu-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 28px;
+      border-radius: 2px;
+      position: relative;
+      overflow: hidden;
+    }
+    .edu-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+    }
+    .edu-degree {
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      color: var(--text-bright);
+      margin-bottom: 6px;
+    }
+    .edu-school {
+      font-size: 12px;
+      color: var(--accent);
+      margin-bottom: 4px;
+    }
+    .edu-year {
+      font-size: 11px;
+      color: var(--text-dim);
+    }
+
+    /* SKILLS */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+    .skill-group {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 24px;
+      border-radius: 2px;
+    }
+    .skill-group-title {
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--text-dim);
+      margin-bottom: 16px;
+    }
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .skill-tag {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      padding: 5px 12px;
+      font-size: 12px;
+      color: var(--text);
+      border-radius: 2px;
+      transition: all 0.15s;
+    }
+    .skill-tag:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+    .skill-tag.lang { border-color: rgba(123,97,255,0.4); color: var(--accent2); }
+
+    /* PROJECTS */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+      gap: 20px;
+    }
+    @media (max-width: 600px) {
+      .projects-grid { grid-template-columns: 1fr; }
+    }
+    .project-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 28px;
+      border-radius: 2px;
+      position: relative;
+      overflow: hidden;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .project-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-3px);
+    }
+    .project-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--accent), transparent);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    .project-card:hover::after { opacity: 1; }
+    .project-icon {
+      font-size: 22px;
+      margin-bottom: 14px;
+    }
+    .project-title {
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 15px;
+      color: var(--text-bright);
+      margin-bottom: 10px;
+    }
+    .project-tag {
+      display: inline-block;
+      font-size: 10px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--green);
+      border: 1px solid rgba(0,255,163,0.3);
+      padding: 2px 8px;
+      border-radius: 2px;
+      margin-bottom: 12px;
+    }
+    .project-desc {
+      font-size: 12px;
+      color: var(--text);
+      line-height: 1.8;
+    }
+
+    /* FOOTER */
+    footer {
+      padding: 40px 0;
+      text-align: center;
+      color: var(--text-dim);
+      font-size: 12px;
+    }
+    .footer-name {
+      font-family: 'Syne', sans-serif;
+      font-size: 14px;
+      font-weight: 800;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+
+    /* ANIMATIONS */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .hero > * { animation: fadeUp 0.6s ease both; }
+    .hero .hero-tag { animation-delay: 0.1s; }
+    .hero h1 { animation-delay: 0.2s; }
+    .hero .hero-sub { animation-delay: 0.3s; }
+    .hero .hero-desc { animation-delay: 0.35s; }
+    .hero .hero-badges { animation-delay: 0.4s; }
+    .hero .hero-links { animation-delay: 0.5s; }
+
+    /* CURSOR BLINK */
+    .cursor {
+      display: inline-block;
+      width: 3px;
+      height: 0.8em;
+      background: var(--accent);
+      margin-left: 4px;
+      vertical-align: middle;
+      animation: blink 1s step-end infinite;
+    }
+    @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+
+    /* RESPONSIVE */
+    @media (max-width: 640px) {
+      .nav-links { display: none; }
+      h1 { font-size: 36px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="container">
+      <a href="#" class="nav-logo">PM_</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="container">
+      <div class="hero-tag">Available for opportunities</div>
+      <h1>Phumlani<span>Mdlalo<span class="cursor"></span></span></h1>
+      <p class="hero-sub">Software Developer &amp; Penetration Tester</p>
+      <p class="hero-desc">
+        Aspiring developer with practical experience in application development and technical support.
+        Currently pursuing <strong style="color:var(--accent)">CompTIA Security+</strong> and ready to contribute to a technical team.
+      </p>
+      <div class="hero-badges">
+        <span class="badge accent">Java Developer</span>
+        <span class="badge purple">Cybersecurity</span>
+        <span class="badge green">CompTIA Security+</span>
+        <span class="badge">Cape Town, WC</span>
+      </div>
+      <div class="hero-links">
+        <a href="https://github.com/PhumlaniMdlalo" target="_blank" class="btn btn-primary">⬡ GitHub</a>
+        <a href="https://linkedin.com/in/phumlani-mdlalo-b17148274" target="_blank" class="btn btn-outline">↗ LinkedIn</a>
+        <a href="mailto:241093813@mycput.ac.za" class="btn btn-outline">✉ Email</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- EDUCATION -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">01</span>
+        <h2>Education</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="edu-grid">
+        <div class="edu-card">
+          <div class="edu-degree">Diploma in ICT: Application Development</div>
+          <div class="edu-school">Cape Peninsula University of Technology</div>
+          <div class="edu-year">Third Year — In Progress</div>
+        </div>
+        <div class="edu-card">
+          <div class="edu-degree">Information Technology &amp; Computer Science</div>
+          <div class="edu-school">College of Cape Town</div>
+          <div class="edu-year">NCV4 — January 2023</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">02</span>
+        <h2>Experience</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="experience-item">
+        <div class="exp-header">
+          <div>
+            <div class="exp-title">Computer Science Tutor</div>
+            <div class="exp-org">CPUT</div>
+          </div>
+          <div class="exp-date">April 2025 – Present</div>
+        </div>
+        <ul class="exp-bullets">
+          <li>Tutored students in core programming concepts including variables, loops, methods, arrays, and basic OOP.</li>
+          <li>Explained complex technical topics in a simple, step-by-step way to improve understanding and test performance.</li>
+          <li>Assisted students with debugging code, correcting logic errors, and improving program structure.</li>
+          <li>Supported learners with assignment preparation and practical exercises while maintaining academic integrity.</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <div class="exp-header">
+          <div>
+            <div class="exp-title">Support Technician &amp; Administrator</div>
+            <div class="exp-org">Ithemba Projects (NPO)</div>
+          </div>
+          <div class="exp-date">Jan 2023 – Jan 2025</div>
+        </div>
+        <ul class="exp-bullets">
+          <li>Provided end-user technical support for staff and volunteers, resolving issues related to Windows, printers, and general hardware/software troubleshooting.</li>
+          <li>Assisted with Microsoft Office and email support, including Outlook setup, login issues, and basic troubleshooting.</li>
+          <li>Installed, configured, and maintained PCs, laptops, and peripherals to ensure reliable day-to-day operations.</li>
+          <li>Managed basic administrative tasks including record-keeping, document management, and supporting internal communication.</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">03</span>
+        <h2>Projects</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-icon">📚</div>
+          <div class="project-tag">Java · OOP</div>
+          <div class="project-title">Library Management System</div>
+          <p class="project-desc">
+            Uses <strong style="color:var(--accent)">inheritance</strong> to manage a database of library users and resources, distinguishing between students, staff, and various media types like books or DVDs.
+          </p>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon">🏦</div>
+          <div class="project-tag">Java · Polymorphism</div>
+          <div class="project-title">Banking Transaction System</div>
+          <p class="project-desc">
+            Illustrates <strong style="color:var(--accent)">polymorphism</strong> by defining different interest and withdrawal rules for Savings, Checking, and Loan accounts. Subclasses override base methods to enforce specific financial logic.
+          </p>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon">☕</div>
+          <div class="project-tag">Java · Desktop App</div>
+          <div class="project-title">Café Order System</div>
+          <p class="project-desc">
+            A Java-based desktop application for campus cafeteria management. Students register, log in, add food items to a cart, apply automatic discounts, and schedule order pickups.
+          </p>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon">🎓</div>
+          <div class="project-tag">Java · Client-Server · Derby DB</div>
+          <div class="project-title">Student Enrolment System</div>
+          <p class="project-desc">
+            A <strong style="color:var(--accent)">client-server</strong> application using Java Swing GUI, Derby database, and DAOs. Administrators perform CRUD operations while students log in to view and enrol in specific courses.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">04</span>
+        <h2>Skills</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <div class="skill-group-title">Technical / Computer Skills</div>
+          <div class="skill-tags">
+            <span class="skill-tag">UI/UX Design</span>
+            <span class="skill-tag">Cybersecurity</span>
+            <span class="skill-tag">Endpoint Security</span>
+            <span class="skill-tag">Networking</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-title">Programming Languages</div>
+          <div class="skill-tags">
+            <span class="skill-tag lang">Java</span>
+            <span class="skill-tag lang">Python</span>
+            <span class="skill-tag lang">MySQL</span>
+            <span class="skill-tag lang">HTML &amp; CSS</span>
+            <span class="skill-tag lang">ABAP</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">05</span>
+        <h2>Contact</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="contact-label">Phone</div>
+          <div class="contact-value">0671910738</div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-label">Email</div>
+          <div class="contact-value"><a href="mailto:241093813@mycput.ac.za">241093813@mycput.ac.za</a></div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-label">LinkedIn</div>
+          <div class="contact-value"><a href="https://linkedin.com/in/phumlani-mdlalo-b17148274" target="_blank">phumlani-mdlalo</a></div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-label">GitHub</div>
+          <div class="contact-value"><a href="https://github.com/PhumlaniMdlalo" target="_blank">PhumlaniMdlalo</a></div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-label">Location</div>
+          <div class="contact-value">Cape Town, WC</div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-label">Reference</div>
+          <div class="contact-value">Anathi Mvinjane · 0767775160</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-name">PHUMLANI MDLALO</div>
+      <p>Software Developer &amp; Penetration Tester · Cape Town, WC</p>
+    </div>
+  </footer>
+
+</body>
+</html>
