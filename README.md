@@ -17,7 +17,7 @@ Aspiring Software Developer and Penetration Tester with practical experience in 
 | 📞 Phone | 0671910738 |
 | 📧 Email | [241093813@mycput.ac.za](mailto:241093813@mycput.ac.za) |
 | 💼 LinkedIn | [linkedin.com/in/phumlani-mdlalo-b17148274](https://linkedin.com/in/phumlani-mdlalo-b17148274) |
-| 🐙 GitHub | [github.com/PhumlaniMdlalo](https://github.com/PhumlaniMdlalo) |
+| 🐙 GitHub | [github.com/PhumlaniMdlalo2](https://github.com/PhumlaniMdlalo2) |
 | 📍 Location | Cape Town, WC |
 
 ---
@@ -93,4 +93,4 @@ A **Client-Server Student Enrolment System** using a Java Swing GUI to manage st
 
 ---
 
-*🌐 View the live portfolio at [PhumlaniMdlalo.github.io/cv](https://PhumlaniMdlalo.github.io/cv)*
+*🌐 View the live portfolio at [PhumlaniMdlalo2.github.io/cv](https://PhumlaniMdlalo2.github.io/cv)*
