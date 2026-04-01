@@ -92,6 +92,4 @@ A **Client-Server Student Enrolment System** using a Java Swing GUI to manage st
 📞 0767775160
 
 ---
-
-*🌐 View the live portfolio at https://phumlanimdlalo2.github.io/*
 <video src="./mock_interview.mp4" controls width="600"></video>
