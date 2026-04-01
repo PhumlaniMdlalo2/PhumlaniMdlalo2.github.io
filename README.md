@@ -53,7 +53,7 @@ Aspiring Software Developer and Penetration Tester with practical experience in 
 - Managed basic administrative tasks including record-keeping, document management, and supporting internal communication.
 
 ---
-
+ 
 ## 🛠️ Skills
 
 ### Technical / Computer Skills
