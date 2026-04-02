@@ -4,25 +4,25 @@
 
 ---
 
-## 🎯 Objective
+## Objective
 
 Aspiring Software Developer and Penetration Tester with practical experience in application development and technical support. Currently pursuing **CompTIA Security+** to strengthen my cybersecurity knowledge, and ready to contribute my skills to a technical team.
 
 ---
 
-## 📬 Contact
+## Contact
 
 | | |
 |---|---|
-| 📞 Phone | 0671910738 |
-| 📧 Email | [241093813@mycput.ac.za](mailto:241093813@mycput.ac.za) |
-| 💼 LinkedIn | [linkedin.com/in/phumlani-mdlalo-b17148274](https://linkedin.com/in/phumlani-mdlalo-b17148274) |
-| 🐙 GitHub | [github.com/PhumlaniMdlalo2](https://github.com/PhumlaniMdlalo2) |
-| 📍 Location | Cape Town, WC |
+| Phone | 0671910738 |
+| Email | [241093813@mycput.ac.za](mailto:241093813@mycput.ac.za) |
+| LinkedIn | [linkedin.com/in/phumlani-mdlalo-b17148274](https://linkedin.com/in/phumlani-mdlalo-b17148274) |
+| GitHub | [github.com/PhumlaniMdlalo2](https://github.com/PhumlaniMdlalo2) |
+| Location | Cape Town, WC |
 
 ---
 
-## 🎓 Education
+## Education
 
 ### Cape Peninsula University of Technology
 **Diploma in ICT: Application Development** — *Third Year (In Progress)*
@@ -32,10 +32,10 @@ Aspiring Software Developer and Penetration Tester with practical experience in 
 
 ---
 
-## 💼 Experience
+## Experience
 
 ### Computer Science Tutor
-📅 *April 2025 – Present*
+ *April 2025 – Present*
 
 - Tutored students in core programming concepts including variables, loops, methods, arrays, and basic OOP.
 - Explained complex technical topics in a simple, step-by-step way to improve understanding and test performance.
@@ -45,7 +45,7 @@ Aspiring Software Developer and Penetration Tester with practical experience in 
 ---
 
 ### Support Technician & Administrator — Ithemba Projects (NPO)
-📅 *January 2023 – January 2025*
+ *January 2023 – January 2025*
 
 - Provided end-user technical support for staff and volunteers, resolving issues related to Windows, printers, and general hardware/software troubleshooting.
 - Assisted with Microsoft Office and email support, including Outlook setup, login issues, and basic troubleshooting.
@@ -54,7 +54,7 @@ Aspiring Software Developer and Penetration Tester with practical experience in 
 
 ---
  
-## 🛠️ Skills
+## Skills
 
 ### Technical / Computer Skills
 `UI/UX Design` `Cybersecurity` `Endpoint Security` `Networking`
@@ -64,32 +64,31 @@ Aspiring Software Developer and Penetration Tester with practical experience in 
 
 ---
 
-## 🚀 Projects
+## Projects
 
-### 📚 Library Management System
+### Library Management System
 Uses **inheritance** to manage a database of library users and resources, distinguishing between students, staff, and various media types like books or DVDs. *(Python)*
 
 ---
 
-### 🏦 Banking Transaction System
+### Banking Transaction System
 Illustrates **polymorphism** by defining different interest and withdrawal rules for Savings, Checking, and Loan accounts. Highlights how subclasses can override base methods to enforce specific financial logic. *(Python)*
 
 ---
 
-### ☕ Café Order System
+### Café Order System
 A **Java-based desktop application** that allows students to register and log in to a campus cafeteria system. Provides an interactive menu where users can add food items to a cart, apply automatic discounts, and schedule order pickups.
 
 ---
 
-### 🎓 Student Enrolment System
+### Student Enrolment System
 A **Client-Server Student Enrolment System** using a Java Swing GUI to manage student records and course registrations through a networked connection. Utilises a centralised Derby database and Data Access Objects (DAOs) to allow administrators to perform CRUD operations while students can log in to view and enrol in specific courses.
 
 ---
 
-## 📄 References
+## References
 
-**Anathi Mvinjane** — Ithemba Projects (NPO)
-📞 0767775160
+**Anathi Mvinjane** — Ithemba Projects (NPO) 0767775160
  
 ---
 <video src="./mock_interview.mp4" controls width="600"></video>
