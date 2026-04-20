@@ -92,3 +92,71 @@ A **Client-Server Student Enrolment System** using a Java Swing GUI to manage st
  
 ---
 <video src="./mock_interview.mp4" controls width="600"></video>
+
+## Reflections
+
+Reflection 1: Coding My CV in Markdown
+
+Situation
+
+I had to write my CV in Markdown for the GitHub Portfolio assignment. I had never used Markdown before.
+
+Task
+
+My goal was to build a clean, well-structured CV using Markdown features like headings, tables, and links.
+
+Action
+
+I wrote the CV directly in GitHub's browser editor, using the live preview to check my formatting as I went. I learned the syntax by trial and error. The trickiest part was getting the contact table to look right. I also had to find a workaround for my mock interview video since the file was too large to upload directly to the repository.
+
+Result
+
+I successfully published my CV to GitHub Pages and came away with a solid understanding of Markdown — a skill I will use regularly as a developer. The challenges I faced pushed me to be more methodical and to problem-solve rather than give up.
+
+Mock Interview
+
+A two-minute mock interview video marketing myself to a potential employer in the ICT field.
+<video src="./mock_interview.mp4" controls width="600"></video>
+
+Reflection 2: Mock Interview Experience
+
+Situation
+
+I had to record a two-minute mock interview video marketing myself to a potential employer in the ICT field.
+
+Task
+
+My task was to prepare and record a professional self-introduction, dressed appropriately and filmed against a plain background.
+
+Action
+
+I reviewed the interview question types in the subject guide and planned my answers. I was nervous going in — speaking to a camera alone felt unnatural — but I pushed through and focused on staying within the time limit.
+
+Result
+
+After recording I felt noticeably less anxious than before. Watching it back, I noticed my tone was flat and my energy low. Next time I would work on varying my delivery and projecting more enthusiasm. The experience showed me that interview confidence only improves with practice.
+
+GitHub Pages
+
+This portfolio is deployed and publicly accessible via GitHub Pages.
+
+Live site: https://PhumlaniMdlalo2.github.io
+<img width="1375" height="862" alt="image" src="https://github.com/user-attachments/assets/afde9b75-5793-4583-8552-6cb65f318e92" />
+
+Reflection 3: Publishing on GitHub Pages
+
+Situation
+
+I had to publish my portfolio to a live website using GitHub Pages — my first time ever deploying anything to the internet.
+
+Task
+
+My goal was to have a publicly accessible site at my GitHub Pages URL, containing my CV and mock interview video.
+
+Action
+
+I followed the subject guide steps: creating the username.github.io repository, enabling Pages in settings, and deploying from the main branch. I ran into broken links and delays between pushing changes and seeing them go live, which made debugging slower than expected.
+
+Result
+
+I got the site live and working. The biggest lesson was understanding the gap between code that works locally and content that renders correctly once deployed. Having a live portfolio URL I can include in job applications was a practical outcome that made the effort worthwhile.
