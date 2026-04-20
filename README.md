@@ -96,6 +96,7 @@ A **Client-Server Student Enrolment System** using a Java Swing GUI to manage st
 ## Reflections
 
 Reflection 1: Coding My CV in Markdown
+<img width="1888" height="805" alt="image" src="https://github.com/user-attachments/assets/a2f6d53b-ab7c-4566-8ec7-10bc6b4ee11e" />
 
 Situation
 
@@ -116,6 +117,7 @@ I successfully published my CV to GitHub Pages and came away with a solid unders
 Mock Interview
 
 A two-minute mock interview video marketing myself to a potential employer in the ICT field.
+<img width="1823" height="835" alt="image" src="https://github.com/user-attachments/assets/6545283c-2121-4030-a027-87cb94927168" />
 <video src="./mock_interview.mp4" controls width="600"></video>
 
 Reflection 2: Mock Interview Experience
@@ -142,6 +144,7 @@ This portfolio is deployed and publicly accessible via GitHub Pages.
 
 Live site: https://PhumlaniMdlalo2.github.io
 <img width="1375" height="862" alt="image" src="https://github.com/user-attachments/assets/afde9b75-5793-4583-8552-6cb65f318e92" />
+<img width="1905" height="871" alt="image" src="https://github.com/user-attachments/assets/88e1fe95-12af-46a2-b626-befe4099c21f" />
 
 Reflection 3: Publishing on GitHub Pages
 
