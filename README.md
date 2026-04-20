@@ -121,7 +121,7 @@ A client-server application using a Java Swing GUI to manage student records and
 
 **Task:** Have a publicly accessible site at my GitHub Pages URL containing my CV and mock interview video.
 
-**Action:** I followed the subject guide: creating the `username.github.io` repository, enabling Pages in settings, and deploying from the main branch. I encountered broken links and delays between pushing changes and seeing them go live, which slowed down debugging.
+**Action:** I followed the subject guide: creating the `PhumlaniMdlalo2.github.io` repository, enabling Pages in settings, and deploying from the main branch. I encountered broken links and delays between pushing changes and seeing them go live, which slowed down debugging.
 
 **Result:** I got the site live and working. The biggest lesson was understanding the gap between code that works locally and content that renders correctly once deployed. Having a live portfolio URL to include in job applications was a practical and worthwhile outcome.
 
