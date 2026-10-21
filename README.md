@@ -2,23 +2,59 @@
 
 ## Agile Team Charter
 ### Evidence:
+[Team_Charter.docx](https://github.com/user-attachments/files/33762263/Team_Charter.docx)
 ### Reflection:
+**Situation:** I had to create an agile team charter explaining the team's shared purpose, core values, working agreements, and operational boundaries to reduce friction and align daily execution.
+
+**Task:** Formulate a comprehensive team charter document for the Discount Discovery App that outlines our core objectives, individual roles, communication protocols, and SMART goals for the project
+
+**Action:** I reviewed the team charter document to understand the project objectives, member roles, communication plans, and milestones for the Discount Discovery App. I then structured a cohesive reflection detailing the development of our shared purpose, core values, and operational guidelines to streamline collaboration.
+
+**Result:** I successfully articulated the purpose of our agile framework, establishing a clear roadmap for our 6-week MVP delivery, ensuring all team members are aligned on quality standards, communication channels, and milestone goals.
 
 ## User Stories and Tasks
 ### Evidence:
 ### Reflection:
+**Situation:** I had to write my CV in Markdown for the GitHub Portfolio assignment — my first time using Markdown.
+
+**Task:** Build a clean, well-structured CV using Markdown features like headings, tables, and links.
+
+**Action:** I wrote the CV directly in GitHub's browser editor, using the live preview to check formatting as I went. I learned the syntax through trial and error; the trickiest part was getting the contact table to display correctly. I also found a workaround for embedding my mock interview video, which was too large to upload directly to the repository.
+
+**Result:** I successfully published my CV to GitHub Pages and came away with a solid understanding of Markdown — a skill I'll use regularly as a developer. The challenges pushed me to be more methodical and to problem-solve rather than give up.
 
 ## Product Backlog
 ### Evidence:
 ### Reflection:
+**Situation:** I had to write my CV in Markdown for the GitHub Portfolio assignment — my first time using Markdown.
+
+**Task:** Build a clean, well-structured CV using Markdown features like headings, tables, and links.
+
+**Action:** I wrote the CV directly in GitHub's browser editor, using the live preview to check formatting as I went. I learned the syntax through trial and error; the trickiest part was getting the contact table to display correctly. I also found a workaround for embedding my mock interview video, which was too large to upload directly to the repository.
+
+**Result:** I successfully published my CV to GitHub Pages and came away with a solid understanding of Markdown — a skill I'll use regularly as a developer. The challenges pushed me to be more methodical and to problem-solve rather than give up.
 
 ## Sprint Backlog
 ### Evidence:
 ### Reflection:
+**Situation:** I had to write my CV in Markdown for the GitHub Portfolio assignment — my first time using Markdown.
+
+**Task:** Build a clean, well-structured CV using Markdown features like headings, tables, and links.
+
+**Action:** I wrote the CV directly in GitHub's browser editor, using the live preview to check formatting as I went. I learned the syntax through trial and error; the trickiest part was getting the contact table to display correctly. I also found a workaround for embedding my mock interview video, which was too large to upload directly to the repository.
+
+**Result:** I successfully published my CV to GitHub Pages and came away with a solid understanding of Markdown — a skill I'll use regularly as a developer. The challenges pushed me to be more methodical and to problem-solve rather than give up.
 
 ## Agile Logbook
 ### Evidence:
 ### Reflection:
+**Situation:** I had to write my CV in Markdown for the GitHub Portfolio assignment — my first time using Markdown.
+
+**Task:** Build a clean, well-structured CV using Markdown features like headings, tables, and links.
+
+**Action:** I wrote the CV directly in GitHub's browser editor, using the live preview to check formatting as I went. I learned the syntax through trial and error; the trickiest part was getting the contact table to display correctly. I also found a workaround for embedding my mock interview video, which was too large to upload directly to the repository.
+
+**Result:** I successfully published my CV to GitHub Pages and came away with a solid understanding of Markdown — a skill I'll use regularly as a developer. The challenges pushed me to be more methodical and to problem-solve rather than give up.
 
 ---
 # Phumlani Mdlalo
