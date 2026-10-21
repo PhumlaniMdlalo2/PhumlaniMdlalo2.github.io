@@ -25,6 +25,19 @@
 
 **Result:** The team now has a single, structured reference that sets out the full scope of the MVP, from core features like browsing and claiming deals to premium features like price-drop alerts and store analytics. The IDs and clear role separation make it easy to turn the stories into backlog cards, assign work, and check finished features against what each user actually asked for.
 
+## Trello
+### Evidence: 
+[DealNest Trello Board](https://trello.com/b/nORRXFM5/deal-nest)
+### Reflection:
+**Situation:** 
+
+**Task:** 
+
+**Action:**
+
+**Result:** 
+
+
 ## Product Backlog
 ### Evidence:
 ### Reflection:
