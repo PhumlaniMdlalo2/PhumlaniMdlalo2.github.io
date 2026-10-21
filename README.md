@@ -14,14 +14,16 @@
 
 ## User Stories and Tasks
 ### Evidence:
+[DealNest_User_Stories.docx](https://github.com/user-attachments/files/33763725/DealNest_User_Stories.docx)
+
 ### Reflection:
-**Situation:** I had to write my CV in Markdown for the GitHub Portfolio assignment — my first time using Markdown.
+**Situation:** The Discount Discovery App (DealNest) needed a clear, shared definition of what we were building before development could be planned. Without it, the team risked building features that didn’t match user needs, or overlapping and missing work between the customer, store owner, and admin sides of the app.
 
-**Task:** Build a clean, well-structured CV using Markdown features like headings, tables, and links.
+**Task:** Produce a complete, readable set of user stories for the app, covering every user group and subscription tier. Each story had to state who the user is, what they want, and why it matters, so the whole team could use it as the basis for backlog planning and testing
 
-**Action:** I wrote the CV directly in GitHub's browser editor, using the live preview to check formatting as I went. I learned the syntax through trial and error; the trickiest part was getting the contact table to display correctly. I also found a workaround for embedding my mock interview video, which was too large to upload directly to the repository.
+**Action:** I wrote 27 user stories in the “As a / I want / so I can” format and organised them into five groups: Free Customer, DealNest Plus, Store Owner, Admin, and All Users. I gave each story a unique ID (US-001 to US-027) and a short title so it could be referenced easily in the backlog and in discussions. I then put the stories into a Word document with a consistent table layout, so the stories are easy to scan, compare across roles, and hand over to the rest of the team.
 
-**Result:** I successfully published my CV to GitHub Pages and came away with a solid understanding of Markdown — a skill I'll use regularly as a developer. The challenges pushed me to be more methodical and to problem-solve rather than give up.
+**Result:** The team now has a single, structured reference that sets out the full scope of the MVP, from core features like browsing and claiming deals to premium features like price-drop alerts and store analytics. The IDs and clear role separation make it easy to turn the stories into backlog cards, assign work, and check finished features against what each user actually asked for.
 
 ## Product Backlog
 ### Evidence:
