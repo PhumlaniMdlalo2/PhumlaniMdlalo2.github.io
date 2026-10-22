@@ -53,14 +53,23 @@
 
 ## Agile Logbook
 ### Evidence:
+4-7 August
+[Logbook(4-7).docx](https://github.com/user-attachments/files/33810644/Logbook.4-7.docx)
+14-17 July
+[Logbook(14-17) 1.docx](https://github.com/user-attachments/files/33810665/Logbook.14-17.1.docx)
+21-24 July
+[Logbook 21-24.docx](https://github.com/user-attachments/files/33810657/Logbook.21-24.docx)
+28-31 July
+[Logbook 28-31.docx](https://github.com/user-attachments/files/33810652/Logbook.28-31.docx)
+
 ### Reflection:
-**Situation:** I had to write my CV in Markdown for the GitHub Portfolio assignment — my first time using Markdown.
+**Situation:** The DealNest project was run using Agile practices, and the team needed a way to record progress, decisions, and challenges as the work happened. Without a consistent record, it would have been hard to show how the project developed or to track what each member contributed.
 
-**Task:** Build a clean, well-structured CV using Markdown features like headings, tables, and links.
+**Task:** Maintain an Agile logbook that documented the project’s daily and weekly activities, stand-up discussions, sprint progress, and personal contributions, so it could be used to track delivery and reflect on how the team was working.
 
-**Action:** I wrote the CV directly in GitHub's browser editor, using the live preview to check formatting as I went. I learned the syntax through trial and error; the trickiest part was getting the contact table to display correctly. I also found a workaround for embedding my mock interview video, which was too large to upload directly to the repository.
+**Action:** I updated the logbook regularly, recording what was planned, what was completed, and any blockers raised in stand-ups. I linked each entry to the sprint and Trello board so the logbook matched the team’s actual workflow. I also used the entries to review progress against the sprint goals and to identify what was working and what needed to change.
 
-**Result:** I successfully published my CV to GitHub Pages and came away with a solid understanding of Markdown — a skill I'll use regularly as a developer. The challenges pushed me to be more methodical and to problem-solve rather than give up.
+**Result:** The logbook gave the team a clear, chronological record of the project and made progress, accountability, and team communication visible. It also helped me reflect on how Agile practices such as stand-ups, sprint planning, and continuous tracking improved collaboration and kept the project on course.
 
 ---
 # Phumlani Mdlalo
