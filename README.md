@@ -28,6 +28,7 @@
 ## Product Backlog
 ### Evidence: 
 <img width="212" height="743" alt="image" src="https://github.com/user-attachments/assets/9a65eff6-06fe-4123-b265-f925689b49f5" />
+
 ### Reflection:
 **Situation:** The DealNest project needed a single, complete list of everything the app had to deliver. The backlog had 276 cards, but many of them described tasks without saying who needed the feature or why.
 
@@ -40,6 +41,7 @@
 ## Sprint Backlog
 ### Evidence:
 <img width="1913" height="752" alt="image" src="https://github.com/user-attachments/assets/3a2d2247-6153-4daf-bbab-564f4d2fed9b" />
+
 ### Reflection:
 **Situation:** With a Product Backlog of 299 cards, three team members, and a limited timeline, we needed a realistic plan for what to build and in what order.
 
