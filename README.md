@@ -25,40 +25,29 @@
 
 **Result:** The team now has a single, structured reference that sets out the full scope of the MVP, from core features like browsing and claiming deals to premium features like price-drop alerts and store analytics. The IDs and clear role separation make it easy to turn the stories into backlog cards, assign work, and check finished features against what each user actually asked for.
 
-## Trello
-### Evidence: 
-[DealNest Trello Board](https://trello.com/b/nORRXFM5/deal-nest)
-### Reflection:
-**Situation:** 
-
-**Task:** 
-
-**Action:**
-
-**Result:** 
-
-
 ## Product Backlog
-### Evidence:
+### Evidence: 
+<img width="212" height="743" alt="image" src="https://github.com/user-attachments/assets/9a65eff6-06fe-4123-b265-f925689b49f5" />
 ### Reflection:
-**Situation:** I had to write my CV in Markdown for the GitHub Portfolio assignment — my first time using Markdown.
+**Situation:** The DealNest project needed a single, complete list of everything the app had to deliver. The backlog had 276 cards, but many of them described tasks without saying who needed the feature or why.
 
-**Task:** Build a clean, well-structured CV using Markdown features like headings, tables, and links.
+**Task:** Turn the backlog into a clear Product Backlog where each feature card was tied to a real user need, so the team could prioritise and plan from it.
 
-**Action:** I wrote the CV directly in GitHub's browser editor, using the live preview to check formatting as I went. I learned the syntax through trial and error; the trickiest part was getting the contact table to display correctly. I also found a workaround for embedding my mock interview video, which was too large to upload directly to the repository.
+**Action:** I wrote a proper “As a / I want / so that” user story at the top of each feature card’s description. I used the roles Customer, Business Owner, and Administrator for user-facing features, and “developer” or “UI/UX designer” for technical and design work. Process cards, such as retrospectives, setup, and documentation, were left without stories because they have no user value of their own. I also summarised the scope in 27 high-level user stories, grouped by Free Customer, DealNest Plus, Store Owner, Admin, and All Users.
 
-**Result:** I successfully published my CV to GitHub Pages and came away with a solid understanding of Markdown — a skill I'll use regularly as a developer. The challenges pushed me to be more methodical and to problem-solve rather than give up.
+**Result:** Every feature card now explains who it is for and why it matters, so the Product Backlog is a clear, prioritised source of work for sprint planning. The team can trace each task back to a user need.
 
 ## Sprint Backlog
 ### Evidence:
+<img width="1913" height="752" alt="image" src="https://github.com/user-attachments/assets/3a2d2247-6153-4daf-bbab-564f4d2fed9b" />
 ### Reflection:
-**Situation:** I had to write my CV in Markdown for the GitHub Portfolio assignment — my first time using Markdown.
+**Situation:** With a Product Backlog of 299 cards, three team members, and a limited timeline, we needed a realistic plan for what to build and in what order.
 
-**Task:** Build a clean, well-structured CV using Markdown features like headings, tables, and links.
+**Task:** Break the Product Backlog into sprint-sized pieces that spread the workload evenly and respect dependencies.
 
-**Action:** I wrote the CV directly in GitHub's browser editor, using the live preview to check formatting as I went. I learned the syntax through trial and error; the trickiest part was getting the contact table to display correctly. I also found a workaround for embedding my mock interview video, which was too large to upload directly to the repository.
+**Action:** I sorted the cards into eight sprint lists of 36 cards each (the last has 24), based on three people completing three cards a day over four-day sprints. Foundation work like design, the database, and authentication came first, then the customer, store owner, and admin features, then maps, and finally testing and optimisation. I added colour-coded labels for role, area, and team member so ownership is clear on each card.
 
-**Result:** I successfully published my CV to GitHub Pages and came away with a solid understanding of Markdown — a skill I'll use regularly as a developer. The challenges pushed me to be more methodical and to problem-solve rather than give up.
+**Result:** The team has a clear sprint-by-sprint plan towards the MVP, with an even workload, dependencies in the right order, and testing scheduled before release. Each sprint is a focused set of work pulled from the Product Backlog.
 
 ## Agile Logbook
 ### Evidence:
